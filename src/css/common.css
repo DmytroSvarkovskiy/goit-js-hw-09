@@ -27,7 +27,7 @@ div.timer {
   gap: 30px;
 }
 
-input + button[data-start] {
+.wrapper button[data-start] {
   font-weight: 500;
   width: 90px;
   height: 30px;
@@ -36,7 +36,7 @@ input + button[data-start] {
   border: 2px solid transparent;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-input + button[data-start]:hover {
+.wrapper button[data-start]:hover {
   background-color: rgb(131, 212, 212);
   cursor: pointer;
 }
@@ -48,9 +48,12 @@ input + button[data-start]:hover {
   margin-bottom: 10px;
   border: 2px solid rgb(103, 180, 180);
 }
-input + button[disabled] {
-  margin: 0 auto;
+.wrapper button[disabled]:hover {
   cursor: default;
+}
+.wrapper button[disabled] {
+  margin: 0 auto;
+
   background-color: rgb(136, 210, 223);
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
