@@ -24,7 +24,7 @@ function createPromise(position, delay) {
 
 const onSubmitClick = event => {
   event.preventDefault();
-   for (i = 0; i < amount.value; i += 1) {
+   for (let i = 0; i < amount.value; i += 1) {
       startStep += 1; 
    
     createPromise().then(({ position, delay }) => {
